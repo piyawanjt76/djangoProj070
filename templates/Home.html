@@ -1,0 +1,38 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="mt-4 p-5 bg-secondary text-white rounded">
+  <h1>introduce myself website</h1>
+  <p>A jumbotron was introduced in Bootstrap 3 as a big padded box for calling extra attention to
+      some special content or information. Jumbotrons are no longer supported in Bootstrap 5.
+      However, you can use a div element and add special helper classes together with a color class to achieve the same effect:
+  </p>
+    <div class="row">
+        <div class="col-lg-4">
+           <img src="{% static 'images/h.jpg' %}"
+        class="rounded-circle " width="200px"height="200">
+
+        </div>
+        <div class="col-lg-4">
+            Awards:
+            Certificate of Best Digitel company 2022,
+            Champain of new Business Era 2020,
+            Catificate of good grow manament organizer
+        </div>
+    </div>
+<div class="text-center">
+    <div class="spinner-grow text-muted"></div>
+    <div class="spinner-grow text-primary"></div>
+    <div class="spinner-grow text-success"></div>
+    <div class="spinner-grow text-info"></div>
+    <div class="spinner-grow text-warning"></div>
+    <div class="spinner-grow text-danger"></div>
+    <div class="spinner-grow text-secondary"></div>
+    <div class="spinner-grow text-dark"></div>
+    <div class="spinner-grow text-light"></div>
+
+</div>
+</div>
+
+{% endblock %}

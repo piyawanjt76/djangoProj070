@@ -1,0 +1,59 @@
+{% extends 'Base.html' %}
+{% load static %}
+{% block content %}
+    <br>
+    <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8"></div>
+        <div class="alert alert-success alert-dismissible">
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            "
+            <strong>Success!</strong> Indicates a successful or positive action.
+        </div>
+        <div class="alert alert-danger">
+            <strong>ด่วน!</strong>วันนี้น้ำมันขึ้นราคา รีบเติมด่วน
+        </div>
+    </div>
+    <div class="col-lg-2"></div>
+
+    <div>
+        <span class="badge bg-primary">สุขสันต์วันอาทิตย์</span>
+        <span class="badge bg-secondary">พรุ่งนีี้อาจารย์ไม่สอน</span>
+        <span class="badge bg-success">สบายๆ</span>
+        <span class="badge bg-danger"><h1>BIS3R1</h1></span>
+    </div>
+
+    <div class="progress">
+        <div class="progress-bar" style="width: 70%">70%</div>
+    </div><br>
+
+    <button data-bs-toggle="collapse" data-bs-target="#demo">Piya1</button>
+
+    <div id="demo" class="collapse">
+        Lorem ipsum dolor
+    </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+        ตกลง
+    </button>
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    piyapiyapiya1
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
